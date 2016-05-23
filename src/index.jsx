@@ -1,10 +1,15 @@
-import React from 'react';
-import {render} from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import rootReducer from './reducers'
+import App from './containers/app'
 
-class App extends React.Component {
-  render () {
-    return <p> New react stuff: Hello React!</p>;
-  }
-}
+const rootElement = document.getElementById('app')
 
-render(<App/>, document.getElementById('app'));
+render(
+  <Provider store={createStore(rootReducer)}>
+    <App/>
+  </Provider>,
+  rootElement
+)

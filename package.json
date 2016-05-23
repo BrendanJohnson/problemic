@@ -14,7 +14,8 @@
     "webpack": "^1.13.1"
   },
   "scripts": {
-    "start": "node server/index.js",
+    "dev": "webpack -d --watch",
+    "prod": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

@@ -1,3 +1,5 @@
+### Some Additional Info
+
 ### Running project
 - Run `npm run dev` in the project directory to build the project
 - Open public/index.html in your browser
